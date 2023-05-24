@@ -1,5 +1,6 @@
 See [Notes Diagram](./notes-diagram.md) for more information.
 
+sequenceDiagram
 participant browser
 participant server
 
