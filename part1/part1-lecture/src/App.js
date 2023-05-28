@@ -1,45 +1,111 @@
-const Footer = () => {
+import { useState } from "react"
+
+// Do not define components inside another component
+const Display = props => <div>{props.value}</div>
+
+// This is the right place to define a component
+const Button = (props) => (
+  <button onClick={props.handleClick}>
+    {props.text}
+  </button>
+)
+
+const App = () => {
+  const [value, setValue] = useState(10)
+
+  const setToValue = newValue => {
+    console.log('value now', newValue)
+    setValue(newValue)
+  }
+
   return (
     <div>
-      <p> greeting app created by <a href='https://github.com/mluukkai'>mluukkai</a> </p>
+      <Display value={value} />
+      <Button handleClick={() => setToValue(1000)} text="thousand" />
+      <Button handleClick={() => setToValue(0)} text="reset" />
+      <Button handleClick={() => setToValue(value + 1)} text="increment" />
     </div>
   )
 }
 
-const Hello = (props) => {
-  return (
-    <>
-      <p> Hello {props.name}, you are {props.age} years old! </p>
-    </>
-  )
-}
 
-// const App = () => {
 
-//   const name = 'Peter';
-//   const age = 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const History = (props) => {
+//   if (props.allClicks.length === 0) {
+//     return (
+//       <div>
+//         The app is used by pressing the buttons
+//       </div>
+//     )
+//   }
 
 //   return (
-//     <>
-//       <h1>Greetings</h1>
-//       <Hello name="Maya" age={26 + 10} />
-//       <Hello name={name} age={age} />
-//       <Footer />
-//     </>
+//     <div>
+//       Button Press History: {props.allClicks.join(' ')}
+//     </div>
 //   )
 // }
 
-const App = () => {
-  const friends = [
-    { name: 'Peter', age: 4 },
-    { name: 'Maya', age: 10 },
-  ]
-  return (
-    <div>
-      <p>{friends[0].name} {friends[0].age}</p>
-      <p>{friends[1].name} {friends[1].age}</p>
-    </div>
-  )
-}
+// const Button = ( { handleClick, text } ) => {
+//   return (
+//     <button onClick={handleClick}>
+//       {text}
+//     </button>
+//   )
+// }
+
+// const App = (props) => {
+  
+//   const [left, setLeft] = useState(0)
+//   const [right, setRight] = useState(0)
+//   const [allClicks, setAll] = useState([])
+//   const [total, setTotal] = useState(0)
+
+//   const handleLeftClick = () => {
+//     setAll(allClicks.concat('L'))
+//     const updatedLeft = left + 1
+//     setLeft(updatedLeft)
+//     setTotal(updatedLeft + right)
+//   }
+
+//   const handleRightClick = () => {
+//     setAll(allClicks.concat('R'))
+//     const updatedRight = right + 1
+//     setRight(updatedRight)
+//     setTotal(left + updatedRight)
+//   }
+
+//   return (
+//     <div>
+//       {left}
+      
+//       <Button handleClick={ handleLeftClick } text = 'left' />
+//       <Button handleClick={ handleRightClick } text = 'right' />
+
+//       {right}
+//       <History allClicks = { allClicks } />
+//     </div>
+//   )
+  
+// }
 
 export default App
