@@ -1,0 +1,104 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "content": "HTML is easy",
+      "important": true
+    },
+    {
+      "id": 2,
+      "content": "Browser can execute only JavaScript",
+      "important": false
+    },
+    {
+      "id": 3,
+      "content": "GET and POST are the most important methods of HTTP protocol",
+      "important": true
+    },
+    {
+      "content": "Hi",
+      "important": false,
+      "id": 4
+    },
+    {
+      "content": "Really its working?",
+      "important": true,
+      "id": 5
+    },
+    {
+      "content": "Wow, this is great!",
+      "important": false,
+      "id": 6
+    },
+    {
+      "content": "Im working",
+      "important": true,
+      "id": 7
+    },
+    {
+      "content": "why was i getting that weird error & not anymore, like that was freaking weird... wasn't?",
+      "important": false,
+      "id": 8
+    },
+    {
+      "content": "does it reload?",
+      "important": true,
+      "id": 9
+    },
+    {
+      "content": "im here i think",
+      "important": false,
+      "id": 10
+    },
+    {
+      "content": "im here i think",
+      "important": false,
+      "id": 11
+    },
+    {
+      "content": "im here i think",
+      "important": false,
+      "id": 12
+    },
+    {
+      "content": "im here i think",
+      "important": true,
+      "id": 13
+    },
+    {
+      "content": "im here i think",
+      "important": true,
+      "id": 14
+    },
+    {
+      "content": "what happens here?",
+      "important": false,
+      "id": 15
+    },
+    {
+      "content": "So hows this, i dont even know tbh",
+      "important": false,
+      "id": 16
+    },
+    {
+      "content": "hey wassup",
+      "important": false,
+      "id": 17
+    },
+    {
+      "content": "Hey, whats up, yall!",
+      "important": false,
+      "id": 18
+    },
+    {
+      "content": "Okay, nice!",
+      "important": false,
+      "id": 19
+    },
+    {
+      "content": "Y el compa Bad Bunny!",
+      "important": true,
+      "id": 20
+    }
+  ]
+}
